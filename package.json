@@ -1,0 +1,14 @@
+{
+  "name": "rahulraina711",
+  "version": "1.0.0",
+  "description": "chrome extension",
+  "main": "background.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "rahul raina",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}

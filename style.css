@@ -1,0 +1,113 @@
+body {
+    background: rgb(2, 0, 36);
+    font-size: 20px;
+    font-family: 'Hachi Maru Pop', cursive;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 103, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.q-links {
+    padding: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+a{  
+    background-size: 100%;
+    background-position: center;
+    transition: 0.2s ease-in-out;
+}
+a:hover{
+    background-size: 110% ;
+    
+}
+
+.movies {
+    font-size: 20px;
+    margin-top: 50px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.history {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgba(229, 229, 229, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin: 10px;
+ 
+}
+
+.poster-container{
+    font-family: 'Roboto', sans-serif;
+    height: 350px;
+    width: 225px;
+    position: relative;
+    padding: 10px;
+    background-position: center;
+    background-size: 100%;
+    margin: 10px;
+    transition: 0.5s;
+    border-radius: 20px;
+
+}
+.poster-container:hover{
+    background-size: 110%;
+}
+
+.poster-container:after{
+    position: absolute;
+    border-radius: 20px;
+    top:92%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.7);
+    color: #ffffff;
+    padding: 5px;
+ 
+    content: attr(data-plot);
+    transition: 0.5s;
+}
+
+.poster-container:hover:after{
+    top: 0px;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.6);
+    
+
+}
+
+.poster-container:first-line{
+    color: #fff;
+    font-weight: bold;
+    font: size 1.1em;
+}
